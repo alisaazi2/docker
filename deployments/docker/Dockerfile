@@ -45,4 +45,4 @@ RUN curl -LO "https://storage.googleapis.com/kubernetes-release/release/${KUBECT
 
 ## Coping the script to set kube config
 COPY . /scripts/Dockerfile/
-RUN su - root -c "sh /scripts/Dockerfile/set-config.sh"
+RUN su - root -c "sh set-config.sh"
